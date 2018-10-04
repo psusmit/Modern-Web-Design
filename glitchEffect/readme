@@ -1,4 +1,4 @@
 just copy paste your .jpg/.png file to this code section:- 
 <div class="glitch-img" style="background-image: url('darkknight.jpg')"></div>
 
-![darkknight](https://user-images.githubusercontent.com/17751150/46454918-3ddac680-c7c6-11e8-9aca-201db83dbd70.jpg)
+<img src="images/darkknight.jpg">
