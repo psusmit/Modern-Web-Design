@@ -1,4 +1,0 @@
-just copy paste your .jpg/.png file to this code section:- 
-<div class="glitch-img" style="background-image: url('darkknight.jpg')"></div>
-
-<img src="images/darkknight.jpg">
