@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding GIF as a loader</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <div id="loader"></div>
+    <div id="content">
+        <h1>GIF AS A PRELOADER</h1>
+    </div>
+    <script type="text/javascript">
+        
+        var loader;
+        function loadNow(opacity) {
+            if(opacity <= 0) {
+                displayContent();
+            }
+            else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                    loadNow(opacity - 0.05)
+                }, 100);
+            }
+        }
+        
+        function displayContent() {
+            loader.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        });
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
